@@ -1,17 +1,23 @@
 class Demo{
+  
   public static void main(String [] args) {
+    Computer obj = new Computer();
 
-    int number1 = 15;
-    int number2 = 25;
-    Calculator calc = new Calculator();
-    int result = calc.add(number1, number2);
-    System.out.println(result);
-
+    obj.playMusic();
+    String str = obj.getAPen();
+    System.out.println(str);
   }
 }
 
-class Calculator {
-  public int add(int n1, int n2){
-    return n1 + n2;
+class Computer {
+  
+  public void playMusic() {
+
+    System.out.println("playing music");
+  
+  }
+
+  public String getAPen() {
+    return "pen";
   }
 }
