@@ -50,6 +50,7 @@ class Operators{
     arithmetic(a, b, a1, b1);
     Unary(a, b);
     Logical(boo1, boo2);
+    Ternary(a, b);
     
   }
 
@@ -71,8 +72,15 @@ class Operators{
 
   //logical operators
   public static void Logical(boolean boo1, boolean boo2){
-    System.out.println("if both the condition are true: " + (boo1 && boo2));
-    System.out.println("if any one of the condition is true: " + (boo1 || boo2));
+    System.out.println("both the condition are true: " + (boo1 && boo2));
+    System.out.println("any one of the condition is true: " + (boo1 || boo2));
     System.out.println("used to reverse the condition: " + (!boo1));
   }
+
+  //ternary operator
+  public static void Ternary(int a, int b) {
+    boolean terResult = a > b ? true : false;
+    System.out.println(terResult);
+  }
+
 }
