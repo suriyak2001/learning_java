@@ -51,6 +51,7 @@ class Operators{
     Unary(a, b);
     Logical(boo1, boo2);
     Ternary(a, b);
+    Shift(a);
     
   }
 
@@ -73,7 +74,7 @@ class Operators{
   //logical operators
   public static void Logical(boolean boo1, boolean boo2){
     System.out.println("both the condition are true: " + (boo1 && boo2));
-    System.out.println("any one of the condition is true: " + (boo1 || boo2));
+    System.out.println("any one of the condition is true: "+(boo1 || boo2));
     System.out.println("used to reverse the condition: " + (!boo1));
   }
 
@@ -83,4 +84,9 @@ class Operators{
     System.out.println(terResult);
   }
 
+  //shift operators
+  public static void Shift(int a) {
+    System.out.println("a << 1: " + (a << 1));
+    System.out.println("a >> 1: " + (a >> 1));
+  }
 }
