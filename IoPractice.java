@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class IoPractice{
+public class IoPractice {
   public static void main(String[] args) {
 
     // creating a scanner object to store the inputs
@@ -8,7 +8,7 @@ public class IoPractice{
 
     System.out.println("welcome to java I/O practice");
 
-    // entering Input
+    // entering Inputs
     System.out.println("enter your name:");
     String name = input.nextLine();
 
